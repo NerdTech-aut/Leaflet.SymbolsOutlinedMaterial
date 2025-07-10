@@ -7,7 +7,7 @@
  * 
  * Author: NerdTech-aut <https://github.com/nerdtech-aut>
  * License: MIT
- * Version: 1.0
+ * Version: 1.0.0
 */
 
 /*global L*/
@@ -15,11 +15,11 @@
 (function (window, document, undefined) {
     "use strict";
 
-    L.IconMaterial = {};
+    L.SymbolsOutlinedMaterial = {};
 
-    L.IconMaterial.version = '1.1.0';
+    L.SymbolsOutlinedMaterial.version = '1.0.0';
 
-    L.IconMaterial.Icon = L.Icon.extend({
+    L.SymbolsOutlinedMaterial.Icon = L.Icon.extend({
         options: {
             className: 'l-icon-material',
             icon: 'radio_button_checked',
@@ -77,9 +77,9 @@
             return svg;
         }
     });
-        
-    L.IconMaterial.icon = function (options) {
-        return new L.IconMaterial.Icon(options);
+
+    L.SymbolsOutlinedMaterial.icon = function (options) {
+        return new L.SymbolsOutlinedMaterial.Icon(options);
     };
 
 }(this, document));
