@@ -1,15 +1,15 @@
 {
-  "name": "leaflet-iconmaterial",
-  "version": "1.1.0",
-  "description": "Just another shameless copy of Awesome-Markers, but this time SVG-based with Material Icons: customizable fill and outline.",
-  "main": "dist/leaflet.icon-material.js",
-  "style": "dist/leaflet.icon-material.css",
+  "name": "leaflet-symbolsoutlinedmaterial",
+  "version": "1.0.0",
+  "description": "Just another shameless copy of Leaflet.Awesome-Markers and Leaflet.IconMaterial, but this time with Material Symbols Outlined icons and customizable `fill` and `outline` colors of the marker.",
+  "main": "dist/leaflet.symbols-outlined-material.js",
+  "style": "dist/leaflet.symbols-outlined-material.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ilyankou/Leaflet.IconMaterial.git"
+    "url": "git+https://github.com/NerdTech-aut/Leaflet.SymbolsOutlinedMaterial.git"
   },
   "keywords": [
     "leaflet",
@@ -17,10 +17,10 @@
     "icon",
     "material"
   ],
-  "author": "Ilya Ilyankou",
+  "author": "NerdTech-aut",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ilyankou/Leaflet.IconMaterial/issues"
+    "url": "https://github.com/NerdTech-aut/Leaflet.SymbolsOutlinedMaterial/issues"
   },
-  "homepage": "https://github.com/ilyankou/Leaflet.IconMaterial#readme"
+  "homepage": "https://github.com/NerdTech-aut/Leaflet.SymbolsOutlinedMaterial#readme"
 }

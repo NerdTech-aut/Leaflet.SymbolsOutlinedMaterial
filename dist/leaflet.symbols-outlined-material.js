@@ -1,10 +1,11 @@
 /**
- * Lefalet.IconMaterial uses code from
- * 1- Leaflet.AwesomeMarkers (c) 2012-2013, Lennard Voogdt <https://github.com/lvoogdt>
- * 2- and Wesley Van De Voorde's SVG magic <https://github.com/wesleyvandevoorde>
- * to create fully colorable SVG markers with Material icons in them.
+ * Leaflet.SymbolsOutlinedMaterial uses code from
+ * 1 - Leaflet.Icon.Material (c) 2015, Ilya Ilyankou <https://github.com/ilyankou>
+ * 2 - Leaflet.AwesomeMarkers (c) 2012-2013, Lennard Voogdt <https://github.com/lennardv2>
+ * 3 - and Wesley Van De Voorde's SVG magic <https://github.com/wesleyvandevoorde>
+ * to create fully colorable SVG markers with Material Symbols Outlined in them.
  * 
- * Author: Ilya Ilyankou <https://github.com/ilyankou>
+ * Author: NerdTech-aut <https://github.com/nerdtech-aut>
  * License: MIT
  * Version: 1.0
 */
@@ -61,9 +62,9 @@
             icon.textContent = options.icon;
             icon.setAttribute('x', '7');
             icon.setAttribute('y', '23');
-            icon.setAttribute('class', 'material-icons');
+            icon.setAttribute('class', 'material-symbols-outlined'); // changed from 'material-icons'
             icon.setAttribute('fill', options.iconColor);
-            icon.setAttribute('font-family', 'Material Icons');
+            icon.setAttribute('font-family', 'Material Symbols Outlined'); // changed from 'Material Icons'
 
             svg.appendChild(path);
             svg.appendChild(backgroundCircle);

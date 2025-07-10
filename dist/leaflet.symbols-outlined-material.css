@@ -1,0 +1,17 @@
+/**
+ * Leaflet.SymbolsOutlinedMaterial uses code from
+ * 1 - Leaflet.Icon.Material (c) 2015, Ilya Ilyankou <https://github.com/ilyankou>
+ * 
+ * Author: NerdTech-aut <https://github.com/nerdtech-aut>
+ * License: MIT
+ * Version: 1.0
+*/
+
+.l-icon-material .material-symbols-outlined {
+    font-size: 17px;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+}
