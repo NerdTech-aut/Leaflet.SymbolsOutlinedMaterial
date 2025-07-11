@@ -3,6 +3,9 @@ Just another shameless copy of Leaflet.Awesome-Markers and Leaflet.IconMaterial,
 
 ![Leaflet.IconMaterial screenshot](screenshot.png "Leaflet.IconMaterial screenshot")
 
+## Usage demo
+In this repository you can find a demo file called [`demo.html`](demo.html). Just open it in your browser to see how it works.
+
 ## Using the plugin
 1. Include Material Symbols Outlined web font in your application. See [Google's Guide](https://developers.google.com/fonts/docs/material_symbols) to learn many ways of doing it. But most likely you will end up with something like that in the `<head>` of your HTML:
 ```html
