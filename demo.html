@@ -1,14 +1,5 @@
-<div id="map" style="height: 300px; width: 300px"></div>
-
-<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
-<script src="./dist/leaflet.icon-material.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="./dist/leaflet.icon-material.css"></link>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css"></link>
-
 <script>
 
-var center = [41.7625, -72.674167]
 
 var map = L.map('map', {
   center: center,
@@ -28,3 +19,63 @@ L.marker(center, {
 }).addTo(map)
 
 </script>
+
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/NerdTech-aut/Leaflet.SymbolsOutlinedMaterial@refs/heads/master/dist/leaflet.symbols-outlined-material.css">
+    <script src="https://cdn.jsdelivr.net/gh/NerdTech-aut/Leaflet.SymbolsOutlinedMaterial@refs/heads/master/dist/leaflet.symbols-outlined-material.js"></script>
+
+<style>
+    html,body {
+        height: 100%; 
+        margin: 0px; 
+        padding: 0px; 
+    }
+
+    body {
+        background-color: #E8FEFF;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+    <div id="map">
+    </div>
+<script>
+    var map;
+    var center = [40.781399746892205, -73.9665221778159]
+    
+    var homeIcon = L.SymbolsOutlinedMaterial.icon({
+        icon: 'home',                      // Name of Material icon
+        iconColor: '#aa2187',              // Material icon color (could be rgba, hex, html name...)
+        markerColor: 'rgba(255,0,0,0.5)',  // Marker fill color
+        outlineColor: 'yellow',            // Marker outline color
+        outlineWidth: 1,                   // Marker outline width 
+        iconSize: [31, 42]                 // Width and height of the icon
+    })
+
+    map = L.map('map', {
+        zoomControl: false,
+        worldCopyJump: false, 
+        maxBounds: [[-85, -180], [85, 180]], 
+        maxBoundsViscosity: 1.0 
+    }).setView(center, 15);
+
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '© OpenStreetMap',}).addTo(map);
+    L.marker(center, {icon: homeIcon}).addTo(map);
+</script>
+</body>
+</html>

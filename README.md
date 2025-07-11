@@ -9,31 +9,37 @@ Just another shameless copy of Leaflet.Awesome-Markers and Leaflet.IconMaterial,
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 ```
 
-2. Next, include `Leaflet.IconMaterial`'s JavaScript and CSS:
+2. Next, include `Leaflet.SymbolsOutlinedMaterial`'s JavaScript and CSS:
 
 ```html
-<link href="leaflet.icon-material.css" rel="stylesheet">
-<script src="leaflet.icon-material.js"></script>
+<link href="leaflet.symbols-outlined-material.css" rel="stylesheet">
+<script src="leaflet.symbols-outlined-material.js"></script>
+```
+2. Or use jsDelivr as a CDN for the JavaScript and CSS files:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/NerdTech-aut/Leaflet.SymbolsOutlinedMaterial@refs/heads/master/dist/leaflet.symbols-outlined-material.css">
+<script src="https://cdn.jsdelivr.net/gh/NerdTech-aut/Leaflet.SymbolsOutlinedMaterial@refs/heads/master/dist/leaflet.symbols-outlined-material.js"></script>
 ```
 
 3. Create a Material icon and add it to your Leaflet map
 ```js
-  // Create a semi-transparent bus icon
-  var busIcon = L.IconMaterial.icon({
-    icon: 'directions_bus',            // Name of Material icon
-    iconColor: '#aa2187',              // Material icon color (could be rgba, hex, html name...)
-    markerColor: 'rgba(255,0,0,0.5)',  // Marker fill color
-    outlineColor: 'yellow',            // Marker outline color
-    outlineWidth: 1,                   // Marker outline width 
-    iconSize: [31, 42]                 // Width and height of the icon
+  // Create a semi-transparent home icon
+  var homeIcon = L.SymbolsOutlinedMaterial.icon({
+    icon: 'home',                         // Name of Material icon
+    iconColor: '#aa2187',                 // Material icon color (could be rgba, hex, html name...)
+    markerColor: 'rgba(255,0,0,0.5)',   // Marker fill color
+    outlineColor: 'yellow',               // Marker outline color
+    outlineWidth: 1,                      // Marker outline width
+    iconSize: [31, 42]                    // Width and height of the icon
   })
   
   // Attach the icon to the marker and add to the map
-  L.marker([41.76,-72.67], {icon: busIcon}).addTo(map)
+  L.marker([40.781399746892205, -73.9665221778159], {icon: homeIcon}).addTo(map)
 ```
 
 ## Credits
 1. Adaptation of [Leaflet.IconMaterial](https://github.com/ilyankou/Leaflet.IconMaterial) by [@ilyankou](https://github.com/ilyankou) - MIT License for use with Material Symbols Outlined
-1. Shamelessly adapted from [Leaflet.AwesomeMarkers](https://github.com/lvoogdt/Leaflet.awesome-markers) by @[lennardv2](https://github.com/lennardv2/Leaflet.awesome-markers) - MIT License
-1. SVG and other magic by [@wesleyvandevoorde](https://github.com/wesleyvandevoorde) from a [never merged pull request](https://github.com/lvoogdt/Leaflet.awesome-markers/pull/74)
-1. [Material Symbols Outlined](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Outlined) by Google - Apache-2.0 license.
+2. Shamelessly adapted from [Leaflet.AwesomeMarkers](https://github.com/lvoogdt/Leaflet.awesome-markers) by @[lennardv2](https://github.com/lennardv2/Leaflet.awesome-markers) - MIT License
+3. SVG and other magic by [@wesleyvandevoorde](https://github.com/wesleyvandevoorde) from a [never merged pull request](https://github.com/lvoogdt/Leaflet.awesome-markers/pull/74)
+4. [Material Symbols Outlined](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.style=Outlined) by Google - Apache-2.0 license.
